@@ -1,0 +1,117 @@
+body{
+    margin: 0px;
+}
+
+header{
+    background-color:black;
+}
+
+header img{
+    transform: rotateY(0deg);
+    transition: all 1s ease-out 0s;
+}
+
+header img:hover{
+    transform: rotateY(360deg);
+}
+
+footer{
+    margin: 0 0 0px 0;
+    padding: 14px 0 1px 0;
+    background-color:black;
+    color: white;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#menupos{
+    position: relative; top:-12px;
+}
+
+.headerlist{
+    display: inline;
+    font-size: 24px;
+    padding: 5px;
+    margin:0 10px;
+    text-align: center;
+}
+
+.headerlist:hover{
+    border-bottom: 2px solid white;
+}
+
+#icon{
+    position: fixed;bottom: 5px;right: 5px;
+}
+
+#mainpos{
+    margin-top:-16px;
+}
+
+h1{
+    margin: 20px 0 0 65px;
+    padding-left: 10px;
+    border-left: 6px solid black; 
+}
+
+h2{
+    margin: 0px 0px 0px 37px;
+    padding-bottom: 8px;
+}
+
+p{
+    margin: 0px 0px 4px 0px;
+}
+
+#owner{
+    float: left;
+    margin:0px 13px 0px 14px;
+    width: 161px;
+}
+
+.intro{
+    background-color:black;
+    color: white;
+    width:90.6%;
+    height: 280px;
+    margin: 10px 0px 0px 66px;
+    font-size: 19px;
+    display: table;
+}
+
+/*.logo2{
+    float:right;
+    width: 35%;
+    position: relative;
+    left: 167px;
+    margin: 92px 0 0 0;
+    display: table;
+}*/
+
+.picleft{
+    float: left;
+    margin: 26px 0 0 28px;
+}
+
+.pg{
+    margin: 39px 0 0 0;
+    padding-right: 15px;
+}
+
+#picpos{
+    margin: 0 66px 0px 66px;
+    padding: 0;
+    overflow: hidden;
+}
+
+#movie{
+    margin: 16px 0 34px 0;
+}
+
+.footp{
+    margin-bottom: 20px;
+}
