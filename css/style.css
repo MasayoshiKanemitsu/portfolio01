@@ -31,6 +31,7 @@ a{
 
 #menupos{
     position: relative; top:-12px;
+    margin: 16px 0;
 }
 
 .headerlist{
@@ -65,6 +66,8 @@ h1{
 
 h2{
    font-family: cursive; 
+    margin-bottom: 17px;
+    font-size: 30px;
 }
 
 p{
@@ -101,9 +104,13 @@ p{
 }
 
 .pg{
-    margin: 0px 25px 13px 227px;
+    margin: 14px 25px 13px 227px;
     padding: 10px auto;
-    font-size: 15px;
+    font-size: 16px;
+}
+
+.pg > p{
+    margin-bottom: 5px;
 }
 
 #picpos{
@@ -128,14 +135,14 @@ p{
 
 .detail{
     margin: 0px 0px 0px 24px;
-    padding: 1px 22px 46px 642px;
+    padding: 8px 22px 22px 642px;
     background-color: black;
     color: white;
 }
 
 .detail2{
-    margin: 0px 644px -364px 0px;
-    padding: 50px 34px 66px 28px;
+    margin: -34px 644px -364px 0px;
+    padding: 70px 27px 33px 28px;
     background-color: black;
     color: white;
 }
@@ -147,10 +154,21 @@ p{
 .point{
     font-weight: 500;
     font-size: 22px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.detail > p{
+    line-height: 21px;
+}
+
+.detail2 > p{
+    line-height: 21px;
 }
 
 .join{
     margin: 364px 0 0 0;
+    padding: 10px 0;
 }
 
 .toContact{
