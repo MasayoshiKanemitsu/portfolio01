@@ -1,43 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"> <!--responsive omajinai-->
+    <link rel="icon" href="image/logofixed.png" sizes="16x16">
     <title>Ballet Bloch Canada</title>
     <link rel="stylesheet" href="css/ress.css">
     <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width:1055px)">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+    (function($) {
+    $(function() {
+        var $header = $('#top-head');
+        // Nav Fixed
+        //$(window).scroll(function() {
+        //    if ($(window).scrollTop() > 350) {
+        //        $header.addClass('fixed');
+        //    } else {
+        //        $header.removeClass('fixed');
+        //    }
+        //});
+        // Nav Toggle Button
+        $('#nav-toggle').click(function(){
+            $header.toggleClass('open');
+        });
+     });
+    })(jQuery);
+</script>
 </head>
 <body>
-    <header>
-        <div>
-        <center>
-        <img src="image/logofixd2.png" alt="Logo">
-        <div id="menupos">
-        <ul>
-            <li class="headerlist"><a href="#">Home</a></li>
-            <li class="headerlist"><a href="#">Faculty</a></li>
-            <li class="headerlist"><a href="#">Training</a></li>
-            <li class="headerlist"><a href="#">Summer Intensive</a></li>
-            <li class="headerlist"><a href="#">Contact</a></li>
-        </ul>
-        </center>
+    <header id="top-head">
+    <div class="inner">
+        <div id="mobile-head">
+            <img class="logo" src="image/logofixed2.png" alt="Logo">
+            <div id="nav-toggle">
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
-        <div id="icon">
-            <a href="https://www.facebook.com/balletbloch" target="_blank"><img src="image/facebooklogo.png" alt="facebook"></a>
-            <a href="https://www.instagram.com/balletblochcanada/" target="_blank"><img src="image/instagramlogo.png" alt="instagram"></a>
-        </div>
-        </div>
-    </header>
-    
+        <nav id="global-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Faculty</a></li>
+                <li><a href="#">Training</a></li>
+                <li><a href="#">Summer Intensive</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="icon">
+        <a href="https://www.facebook.com/balletbloch" target="_blank"><img src="image/facebooklogo2.png" alt="facebook"></a>
+        <a href="https://www.instagram.com/balletblochcanada/" target="_blank"><img src="image/instagramlogo2.png" alt="instagram"></a>
+    </div>
+</header>
+    <div class="bodypos">
     <div>
         <img id="mainpos" src="image/mainpic.jpg" alt="main picture" width="100%">
     </div>
     
     <div>
-    <h1>We are "Ballet Bloch Canada"</h1>
+    <img class="logo-mobile" src="image/logofixed.png" alt="Logo">
+    <h1 class="fixedsize">We are "Ballet Bloch Canada"</h1>
     </div>
     
     <div class="intro">
-        <img id="owner" src="image/owner.jpg" alt="Ms.Tracy">
+        <img class="owner" src="image/owner.jpg" alt="Ms.Tracy">
         <div class="pg">
         <h2>Ms.Tracy</h2>
         <p>Welcome to <i>Ballet Bloch Canada</i>.</p>
@@ -61,18 +91,23 @@
     </div>
     
     <div class="movie">
-        <iframe width="640px" height="360px" src="https://youtube.com/embed/ybQe8nTKCdE"></iframe>
-        <div class="detail">
-            <h2>Faculty</h2>
-            <span class="point"><p>PERFORMANCE OPPORTUNITIES WITH PROFESSIONALS</p></span>
-            <p>In June 2016 Ballet Bloch Canada students shared the stage with six professional dancers: Sophia Lee, Principle of Royal Winnipeg Ballet; Michael Linsmeier, Soloist of Oregon Ballet Theatre; Joshua Beamish, Artist and Choreographer MOVE the company; Mark Dennis, Ballet Kelowna; Joshua Haban, Centre Stage: On Pointe (movie); and Jake Preece, Ballet West II.</p>
-        </div>
-        <div class="detail2">
+        <div class="movie-left">
+        <iframe src="https://youtube.com/embed/ybQe8nTKCdE" width="512px" height="288px"></iframe>
+        <div class="mov-pg">
             <h2>Training</h2>
             <span class="point"><p>PAS DE DEUX OPPORTUNITIES FOR ADVANCED STUDENTS</p></span>
             <p>In June 2015 Ballet Bloch Canada staged the classical repertoire of Les Sylphides. The Corps de Ballet consisted of 11 to 16yr old students with the advanced students performing the lead and pas de deux roles.</p>
         </div>
-        <iframe width="640px" height="360px" src="https://youtube.com/embed/hWvJZFvtx3o"></iframe>
+        </div>
+        
+        <div class="movie-right">
+        <div class="mov-pg">
+            <h2>Faculty</h2>
+            <span class="point"><p>PERFORMANCE OPPORTUNITIES WITH PROFESSIONALS</p></span>
+            <p>In June 2016 Ballet Bloch Canada students shared the stage with six professional dancers: Sophia Lee, Principle of Royal Winnipeg Ballet; Michael Linsmeier, Soloist of Oregon Ballet Theatre; Joshua Beamish, Artist and Choreographer MOVE the company; Mark Dennis, Ballet Kelowna; Joshua Haban, Centre Stage: On Pointe (movie); and Jake Preece, Ballet West II.</p>
+        </div>    
+        <iframe src="https://youtube.com/embed/hWvJZFvtx3o" width="512px" height="288px"></iframe>
+        </div>
     </div>
 
     <div class="join">
@@ -90,11 +125,13 @@
         <div class="footp">
         <p>info@balletbloch.com</p>
         </div>
-        <img src="image/logofixd2.png" alt="Logo" width="65px">
+        <img src="image/logofixed2.png" alt="Logo" width="65px">
         <div class="footp">
         <p>&copy; Ballet Bloch Canada 2016</p>
-    </div>        
+    </div>
+    
     </footer>
+    </div>
     </div>
 </body>
 </html>
